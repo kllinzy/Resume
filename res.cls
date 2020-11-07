@@ -400,7 +400,7 @@
 		       % I do consider this to be a bit of a cludge but
 		       % I can not find a way to write \unskipfutureskip
 		       % or a way to make TeX think that nothing has
-		       % been contributed to the page list.
+    % been contributed to the page list.
   \fi
 }
 

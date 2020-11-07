@@ -1,89 +1,107 @@
 % LaTeX resume using res.cls
-\documentclass[line,margin]{res} 
+\documentclass[line,overlapped,9pt]{res} 
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
+% \sl will be bold italic in New Century Schoolbook (or
+% any postscript font) and just slanted in
+% Computer Modern (default) font
+\usepackage[none]{hyphenat}
+\usepackage[top = 0.5in, bottom=0.5in, left=0.5in]{geometry}
 
 \begin{document}
-
+\setlength\itemsep{.25em}
 \name{Kyle L. Linzy}
-{
-\hfill { \sl Mobile: (918)440-3563} \\
-\null\hfill { \sl Email: kllinzy1@gmail.com} \\
-}
+%{
+%\hfill { \sl Mobile: (918)440-3563} \\
+%\null\hfill { \sl Email: kllinzy1@gmail.com} \\
+%}
 % \address used twice to have two lines of address
-\address{23550 Northgate Crossing Blvd.}
-\address{Spring Texas, 77373, APT. 153}
+\address{23550 Northgate Crossing Boulevard: APT 153 Spring, Texas, 77373}
+\address{Mobile: (918)440-3563, Email: kllinzy1@gmail.com}
 
 \begin{resume}
 
-  \section{EXPERIENCE} {\sl ExxonMobil: Software Developer Full-Stack
-          \hfill 2018 - \sl Present}
-                 \begin{itemize}  \itemsep -2pt % reduce space between items
-                 \item Design, build, deploy, and support custom web applications (WISC) on-prem
-                   and in Azure 
-                 \item Use and create REST APIs to make valuable business data consumable across
-                   organizations
-                 \item Interface with business customers and translate conversation into
-                   requirements 
-                \item Manage workload and prioritize in an agile work environment 
-                \item Administer web server and manage stored procedures and scheduled
-                  tasks for data synchronization
-                \end{itemize}
-
-                 {\sl Oklahoma State University: Teaching Assistant \hfill Aug. 2017 - May 2018}
-                 \begin{itemize}  \itemsep -2pt %reduce space between items
-                 \item Tutor Students During Office Hours 
-                 \item Grade/Proctor Exams and quizzes
-                 \end{itemize} 
-
-
+  \section{Experience} {\sl ExxonMobil: Full-Stack Software Developer \hfill 2018 - \sl Present}
+                 \begin{itemize}   % reduce space between items
+                 \item[--] Design and build custom web applications from database structure to user interface (WISA)
+                 \item[--] Deploy solutions on-prem and in Azure with Azure Pipelines for continuous integration
+                   and delivery
+                 \item[--] Review Pull Requests and coach newer developers on best practices or common patterns
+                 \item[--] Develop console applications for scheduled tasks to automate data synchronization
+                   and simple workflows
+                 \item[--] Use and create REST APIs to make valuable business data easily accessible across
+                   a large organization 
+                 \item[--] Interface with business customers to gather requirements and carefully communicate
+                   concerns about feasibility
+                 \item[--] Manage workload and prioritize features across numerous applications and customers
+                \item[--] Administer web servers to resolve errors and monitor application usage
+                 \end{itemize}
+                 
                  {\sl ABB: Software Engineering Intern  \hfill June 2017 - Aug. 2017 }
-                 \begin{itemize}  \itemsep -2pt %reduce space between items
-                 \item Program embedded microcontrollers that are designed for upstream
+                 \begin{itemize}  %reduce space between items
+                 \item[--] Program embedded microcontrollers that are designed for upstream
                    oil and gas automation 
-                 \item Update host application to properly display new functionality and
+                 \item[--] Update host application to properly display new functionality and
                    communicate with embedded system
-                 \item Contribute to a large (and old) code base while maintaining
+                 \item[--] Contribute to a large code base while maintaining
                    backwards compatibility and improving maintainability
                  \end{itemize} 
 
                  {\sl Phillips 66: Vulnerability Management Intern
                    \hfill        May 2016 - Aug. 2016}
                   \begin{itemize}
-                  \item Coordinate with different teams to verify the security of
+                  \item[--] Coordinate with different teams to verify the security of
                     Phillips 66 internal network
-                  \item Automated processes through scripting and rule management
-                  \item Completed forensic analysis of compromised or suspicious
+                  \item[--] Automated processes through scripting and rule management
+                  \item[--]Completed forensic analysis of compromised or suspicious
                     hard drives
-                  \item Monitor the network and 'hunted' for suspicious threats
-                  \item Participate in incident response exercises 
+                  \item[--] Monitor the network and 'hunted' for suspicious threats
+                  \item[--] Participate in incident response exercises 
+                  \item[--] Presented on threat management best practices for Information
+                    Protection Week
                   \end{itemize}
 
-                  {\sl Benefitfocus: Software Engineering Intern - Database Engineer
+                  {\sl Benefitfocus: Database Engineer Intern 
                     \hfill        June 2015 - Aug. 2015}
                   \begin{itemize}
-                  \item Learned T-SQL, database management, and business specific
+                  \item[--] Learned T-SQL, database management, and business specific
                     standards
-                  \item Updated SQL jobs for industry compatibility as well as review
+                  \item[--] Updated SQL jobs for industry compatibility as well as review
                     teammate changes
-                  \item Investigat and correct instances of mishandled sensitive data
+                  \item[--] Investigate and correct instances of mishandled sensitive data
                   \end{itemize}
 
-\section{COMPUTER \\ SKILLS} {\sl Languages:} 
-                C\#, Java, Python, C++, T-SQL, Bash, Powershell, Verilog and  Assembly (MIPS) \\
-                {\sl Software \& Tools:}
-                Git, Visual Studio, Sql Server Management Studio, Azure, Azure DevOps,
-                Matlab, ModelSim, Quartus, FidelisXPS, Qradar and Forensic Tool Kit \\
-                {\sl Operating Systems:} Windows and Linux
- 
-\section{EDUCATION} Oklahoma State University \hfill 2014 - 2018 \\
-                        {\sl Bachelor of Science,} Electrical Engineering \\
-                        {\sl Bachelor of Science,} Computer Engineering \\
-                        Minor in Mathematics 
-                % \sl will be bold italic in New Century Schoolbook (or
-	        % any postscript font) and just slanted in
-		% Computer Modern (default) font
+     \section{Skills \& Technologies}
 
+            \begin{itemize} 
+            \item[--] {\sl Programming Languages:} C\#, T-SQL, JavaScript, Java, Python, C/C++ and MIPS Assembly 
+            \item[--] {\sl Software \& Tools:} Git, Visual Studio, .NET Framework, .NET Core,
+              SQL Server Management Studio, IIS, Matlab, ModelSim, Quartus,
+              FidelisXPS, Qradar and Forensic Tool Kit 
+            \item[--] {\sl Operating Systems:} Windows and Linux
+            \item[--] {\sl Cloud:} Azure DevOps, Azure Pipelines, Azure App Services, Azure SQL
+              Azure CLI, Azure Active Directory and Graph API
+            \item[--] {\sl Misc.:} Oauth2, Verilog, Bash, zsh, and Powershell  
+            \end{itemize} 
+
+      \section{Education} Oklahoma State University \hfill {\sl Aug. 2014 - May 2018} \\
+            {\sl Bachelor of Science,} Electrical Engineering \hfill {\sl GPA: 3.96}\\
+            {\sl Bachelor of Science,} Computer Engineering \\
+            Minor in Mathematics 
+                
+    \section{Other Work Experience}
+
+            {\sl Oklahoma State University: Teaching Assistant \hfill Aug. 2017 - May 2018}
+            \begin{itemize}  \itemsep -2pt %reduce space between items
+            \item[--] Tutor Students During Office Hours 
+            \item[--] Grade/Proctor Exams and quizzes
+            \end{itemize} 
+
+            {\sl QuikTrip: Store Clerk \hfill June 2015 - Aug. 2015}
+            \begin{itemize} \itemsep -2pt
+            \item[--] Interact with customers to provide positive experience in the store 
+            \item[--] Clean store, manage inventory, and prepare food in the QT Kitchen 
+            \end{itemize}
 
 
 \end{resume}
