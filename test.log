@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.29)  7 NOV 2020 21:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.11.8)  8 NOV 2020 20:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -37,12 +37,7 @@ No auxiliary output files.
 \resumewidth=\dimen136
 \@columnwidth=\dimen137
 \c@numberofcolumns=\count175
-) (/usr/share/texlive/texmf-dist/tex/latex/hyphenat/hyphenat.sty
-Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
-\langwohyphens=\language3
-LaTeX Info: Redefining \_ on input line 43.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
@@ -127,29 +122,23 @@ LaTeX Font Info:    ... okay on input line 11.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-Overfull \hbox (6.59714pt too wide) in paragraph at lines 34--36
-[]\OT1/cmr/m/n/10 Consult with busi-ness cus-tomers to gather re-quire-ments an
-d care-fully com-mu-ni-cate con-cerns about fea-si-bil-ity 
- []
-
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] ) 
 Here is how much of TeX's memory you used:
- 1029 strings out of 483183
- 15343 string characters out of 5966291
- 254743 words of memory out of 5000000
- 16103 multiletter control sequences out of 15000+600000
+ 994 strings out of 483183
+ 14837 string characters out of 5966292
+ 253957 words of memory out of 5000000
+ 16072 multiletter control sequences out of 15000+600000
  533604 words of font info for 28 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 32i,4n,28p,155b,163s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,4n,28p,184b,167s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsl10.pfb>
-Output written on test.pdf (2 pages, 71019 bytes).
+Output written on test.pdf (2 pages, 70838 bytes).
 PDF statistics:
  27 PDF objects out of 1000 (max. 8388607)
  18 compressed objects within 1 object stream
