@@ -7,6 +7,7 @@
 % Computer Modern (default) font
 %\usepackage[none]{hyphenat}
 \usepackage[top = 0.5in, bottom=0.5in, left=0.5in]{geometry}
+\usepackage{enumitem}
 
 \begin{document}
 \setlength\itemsep{.25em}
@@ -18,60 +19,52 @@
 \begin{resume}
 
   \section{Experience} {\sl ExxonMobil: Full-Stack Software Developer \hfill July 2018 - \sl Present}
-                 \begin{itemize}   % reduce space between items
-                 \item[--] NextPlan - Permian planning application
+                 \begin{itemize}[leftmargin=*]   % reduce space between items
+                  \setlength\itemsep{.1em}
+                 \item[] NextPlan - Permian Development planning application
                    \begin{itemize}
-                   \item Built a system that consumes and presents ~30 million data points (yearly planning data) from legacy excel-based applications
-                   \item Related data across disparate groups, manages approvals and aggregates data for high-level manager reports
-                   \item Developed Unconventional IT's first production azure application
-                   \item Automated workflows and simplified communication for highly skilled employees resulting in dramatic cost/time savings
-                   \item Connected NextPlan data sources to external systems for automated calculations and visualizations that do not require IT support
+                  \setlength\itemsep{.1em}
+                   \item Led development on a system that consumes ~30 million data points from legacy excel-based applications
+                   \item Related data across groups; managed approvals and aggregated data for manager reports
+                   \item Automated financial forecast workflows and simplified communication between reservoir engineers, planners and managers
+                   \item Connected NextPlan data to external systems for calculations and visualizations 
+                   \item Designed and deployed the first Unconventional IT application in production Azure environment leveraging message queues and Azure webjobs to handle long running web requests 
+                  \end{itemize}
+                 \item[] Master Data Integration - Master well data application
+                   \begin{itemize}
+                  \setlength\itemsep{.1em}
+                   \item Built the user interface for an API system which aggregated data from 11 source systems to create a single record for business entities (500,000 entity records) 
+                   \item Assisted data management team on API design to simplify development and minimize long-term support cost  
+                   \item Acted as the only support staff for an average of 450 unique monthly users    
                    \end{itemize}
-                 \item[--] Master Data Integration (MDI) - Master well data application
+                 \item[] Legacy Web Applications 
                    \begin{itemize}
-                   \item Aggregated data from 11 source systems to create a single record for business entities (500,000 entity records) 
-                   \item Deployed Unconventional IT's first API driven application primarily as a consumer, but also aided with design of APIs  
-                   \item Supported 450 unique monthly users (average over past year) with minimal IT cost    
-                   \item Tremendously reduced friction between business units and data relevant to various workflows, resulting in dramatic time savings
-                   \end{itemize}
-                 \item[--] Land Documents Workflow (LDW) 
-                   \begin{itemize}
-                   \item Created custom API endpoints for sibling application to create/manage LDW items
-                   \item Supported the application while it processed ~250,000 unique images by a dozen of groups 
-                   \item Expanded application to simplify workflows for 
-                   \end{itemize}
-                 \item[--] General
-                   \begin{itemize}
-                   \item Reviewed Pull Requests and mentor new developers on best practices or common patterns
-                   \item Developed console applications for scheduled tasks to automate data synchronization and workflows
-                   \item Used and created REST APIs to make valuable business data easily accessible across a large organization 
-                   \item Consulted with business customers to gather requirements and carefully communicate concerns about feasibility
+                  \setlength\itemsep{.1em}
+                   \item Developed and supported web based document management system that routed millions of documents to destination systems which allowed the business 
+                    to stop managing paper documents. Approx. \$700,000 annual savings 
+                   \item Designed  web APIs to integrate and modernize a family of legacy applications 
+                   \item Supported custom web application responsible for creating the official accounting record for new wells in Unconventional business unit
                    \end{itemize}
                  \end{itemize}
-                 
-%                 {\sl ABB: Software Engineering Intern  \hfill June 2017 - Aug. 2017 }
-%                 \begin{itemize}  %reduce space between items
-%                 \item[--] Programmed embedded microcontrollers designed for upstream
-%                   oil and gas automation 
-%                 \item[--] Updated host application to properly display new functionality and
-%                   communicate with embedded system
-%                 \item[--] Contributed to a large code base while preserving 
-%                   backward compatibility and improving maintainability
-%                 \end{itemize} 
-%
-%                 {\sl Phillips 66: Vulnerability Management Intern
-%                   \hfill        May 2016 - Aug. 2016}
-%                  \begin{itemize}
-%                  \item[--] Coordinated with different teams to verify the security of
-%                    the Company's internal network
-%                  \item[--] Automated processes through scripting and rule management
-%                  \item[--] Completed forensic analysis of compromised or suspicious
-%                    hard drives
-%                  \item[--] Monitored the network and hunted for potential threats
-%                  \item[--] Participated in incident response exercises 
-%                  \item[--] Presented on threat management best practices for the Company's ``Information
-%                    Protection Week''
-%                  \end{itemize}
+                 {\sl ABB: Software Engineering Intern  \hfill June 2017 - Aug. 2017 }
+                 \begin{itemize}  %reduce space between items
+                  \setlength\itemsep{.1em}
+                 \item[--] Programmed embedded microcontrollers designed for upstream
+                   oil and gas automation 
+                 \item[--] Updated desktop application to properly utilize new embedded functionality and
+                   communicate with embedded system
+                 \end{itemize} 
+                 {\sl Phillips 66: Vulnerability Management Intern
+                   \hfill        May 2016 - Aug. 2016}
+                  \begin{itemize} 
+                  \setlength\itemsep{.1em}
+                  \item [--] Coordinated with operations team to prioritize security efforts minimizing risk with limited resources 
+                  \item[--] Monitored network traffic, hunted for potential threats and investigated vulnerabilities  
+                  \item[--] Participated in incident response events as well as red team/blue team exercises 
+                  \item[--] Completed forensic analysis of compromised or suspicious
+                    hard drives
+                  \item[--] Automated existing processes through scripting and refining rule management
+                  \end{itemize}
 %
 %                  {\sl Benefitfocus: Database Engineer Intern 
 %                    \hfill        June 2015 - Aug. 2015}
@@ -86,20 +79,26 @@
      \section{Skills \& Technologies}
 
             \begin{itemize} 
-            \item[--] {\sl Programming Languages:} C\#, T-SQL, JavaScript, Java, Python, C/C++ and MIPS Assembly 
+
+            \setlength\itemsep{.1em}
+            \item[--] {\sl Programming Languages:} C\#, T-SQL, JavaScript/HTML5/CSS3, Java, Python, C/C++, MIPS Assembly 
             \item[--] {\sl Software \& Tools:} Git, Visual Studio, .NET Framework, .NET Core,
-              SQL Server Management Studio, IIS, Matlab, ModelSim, Quartus,
-              FidelisXPS, Qradar and Forensic Tool Kit 
-            \item[--] {\sl Operating Systems:} Windows and Linux
-            \item[--] {\sl Cloud:} Azure DevOps, Azure Pipelines, Azure App Services, Azure SQL
-              Azure CLI, Azure Active Directory and Graph API
-            \item[--] {\sl Misc.:} Oauth2, Verilog, Bash, Zsh, and Powershell  
+              SSMS, IIS, Matlab 
+%              ModelSim, Quartus,
+%              FidelisXPS, Qradar and Forensic Tool Kit 
+            \item[--] {\sl Operating Systems:} Windows, Linux
+            \item[--] {\sl Cloud:} Azure Pipelines, Azure App Services, Azure SQL,
+              Azure CLI, Azure AD and Graph API
+            \item[--] {\sl Misc.:} OAuth 2.0, Verilog, Bash, and PowerShell 
             \end{itemize} 
 
-      \section{Education} Oklahoma State University -- Stillwater, OK \hfill {\sl Aug. 2014 - May 2018} \\
-            {\sl Bachelor of Science,} Electrical Engineering \hfill {\sl GPA: 3.97}\\
-            {\sl Bachelor of Science,} Computer Engineering \\
-            Minor in Mathematics 
+      \section{Education} Oklahoma State University -- Stillwater, OK \hfill {\sl Aug. 2014 - May 2018}
+          \begin{itemize}
+            \setlength\itemsep{.1em}
+            \item[]{\sl Bachelor of Science,} Electrical Engineering \hfill {\sl GPA: 3.97}
+            \item[]{\sl Bachelor of Science,} Computer Engineering 
+            \item[] Minor in Mathematics 
+          \end{itemize}
                 
     \section{Other Work Experience}
 
