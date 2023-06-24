@@ -1,11 +1,5 @@
 % LaTeX resume using res.cls
-\documentclass[line,overlapped,9pt]{res} 
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font 
-% \sl will be bold italic in New Century Schoolbook (or
-% any postscript font) and just slanted in
-% Computer Modern (default) font
-%\usepackage[none]{hyphenat}
+\documentclass[line,overlapped]{res} 
 \usepackage[top = 0.5in, bottom=0.5in, left=0.5in]{geometry}
 \usepackage{enumitem}
 
@@ -17,117 +11,130 @@
 \address{Mobile: (918)440-3563}
 
 \begin{resume}
+  \section{Experience}
+   {\sl Amazon: Full-Stack Software Development Engineer \hfill April 2022 - \sl Present}
+  \begin{itemize}[leftmargin=*]
+    \item[] Amazon Visualization Platform (AVP) 
+      \begin{itemize}
+        \setlength\itemsep{.1em}
+        \item Developed Amazon's internal SCADA solution for visualizing live site data in Amazon Fulfillment Centers (FCs) 
+        \item Enhanced data collection and transformation layer that consumed raw events from Amazon workcells distributing (200,000 records/s average) for near real-time use cases
+        \item  Built live data backend using AppSync API to transmit relevant live data to user's browser (up to XXX events/s)
+        \item Integrated AVP with Amazon internal permissions solution  to enable self-service permission management on Site Layouts and collections of Site Layouts from within AVP UI
+      \end{itemize}
+    \item[] Quattro Data Modeler
+      \begin{itemize}
+        \setlength\itemsep{.1em}
+        \item Led development on UI/backend solution for building validating and deploying Amazon Machine Data Interface (AMDI) models for acquiring data from Programmable Logic Controllers (PLCs)
+        \item Improved speed and safety of configuring data acquisition by reducing the need to reprogram PLCs to collect the ~40,000 state/alarm data points for Material Handling Equipment (MHE) at FCs 
+        \item Developed the TypeScript implementation of the AMDI specification to define consistent TypeScript types for use in UI/backend applications and support runtime validation for users (using io-ts) to prevent deployment of inaccurate configurations
+      \end{itemize}
+  \end{itemize}
 
-  \section{Experience} {\sl ExxonMobil: Full-Stack Software Developer \hfill July 2018 - \sl Present}
-                 \begin{itemize}[leftmargin=*]   % reduce space between items
-                 \item[] Reservoir Management Data Environment 
-                   \begin{itemize}
-                  \setlength\itemsep{.1em}
-                   \item Developed Angular front end and .NET Framework API for reservoir engineers to save forecast data as well as integrate it with volume and header data
-                   \item Supported Power BI dataflows which powered user-created visualizations and reports
-                   \item Built CI/CD pipeline in Azure DevOps to automatically update Azure Resources and deploy application for rapid development 
-                  \end{itemize}
-                  \setlength\itemsep{.1em}
-                 \item[] NextPlan
-                   \begin{itemize}
-                  \setlength\itemsep{.1em}
-                   \item Led development on a system that consumes ~30 million data points from legacy excel-based applications
-                   \item Automated financial forecast workflows as well as data visualizations and simplified communication between reservoir engineers, planners and managers
-                   \item Secured proprietary data with role-based access (Azure AD and OAuth 2.0)
-                   \item Designed and deployed the first Unconventional IT application in production Azure environment leveraging message queues and Azure webjobs to handle long running web requests 
-                  \end{itemize}
-                 \item[] Master Data Integration - Master well data application
-                   \begin{itemize}
-                  \setlength\itemsep{.1em}
-                   \item Built the user interface for an API system which defined the single source of truth for well data within XTO (500,000 entity records from 11 source systems). 
-                   \item Assisted data management team on API design to minimize long-term support for the application, which averaged 450 unique users each month    
-                   \end{itemize}
-                 \item[] Legacy Web Applications 
-                   \begin{itemize}
-                  \setlength\itemsep{.1em}
-                   \item Developed and supported web based document management system that routed millions of documents to destination systems for \$700,000 annual savings 
-                   \item Designed  web APIs to integrate and modernize a family of legacy applications 
-                   \item Supported custom web application responsible for creating the official accounting record for new wells 
-                   \end{itemize}
-                 \end{itemize}
-                 {\sl ABB: Software Engineering Intern  \hfill June 2017 - Aug. 2017 }
-                 \begin{itemize}  %reduce space between items
-                  \setlength\itemsep{.1em}
-                 \item[--] Programmed embedded microcontrollers designed for upstream
-                   oil and gas automation 
-                 \item[--] Updated desktop application to properly utilize new embedded functionality and
-                   communicate with embedded system
-                 \end{itemize} 
-                 {\sl Phillips 66: Vulnerability Management Intern
-                   \hfill        May 2016 - Aug. 2016}
-                  \begin{itemize} 
-                  \setlength\itemsep{.1em}
-                  \item[--] Monitored network traffic, hunted for potential threats and investigated vulnerabilities  
-                  \item[--] Participated in incident response events as well as red team/blue team exercises 
-                  \item[--] Completed forensic analysis of compromised or suspicious
-                    hard drives
-                  \end{itemize}
+  {\sl ExxonMobil: Full-Stack Software Developer \hfill July 2018 - \sl Present}
+  \begin{itemize}[leftmargin=*]   % reduce space between items
+    \item[] Reservoir Management Data Environment
+      \begin{itemize}
+        \setlength\itemsep{.1em}
+        \item Developed Angular front end and .NET Framework API for reservoir engineers to save forecast data as well as integrate it with volume and header data
+        \item Supported Power BI dataflows which powered user-created visualizations and reports
+        \item Built CI/CD pipeline in Azure DevOps to automatically update Azure Resources and deploy application for rapid development
+      \end{itemize}
+      \setlength\itemsep{.1em}
+    \item[] NextPlan
+      \begin{itemize}
+        \setlength\itemsep{.1em}
+        \item Led development on a system that consumes ~30 million data points from legacy excel-based applications
+        \item Automated financial forecast workflows as well as data visualizations and simplified communication between reservoir engineers, planners and managers
+        \item Secured proprietary data with role-based access (Azure AD and OAuth 2.0)
+        \item Designed and deployed the first Unconventional IT application in production Azure environment leveraging message queues and Azure webjobs to handle long running web requests
+      \end{itemize}
+    \item[] Master Data Integration - Master well data application
+      \begin{itemize}
+        \setlength\itemsep{.1em}
+        \item Built the user interface for an API system which defined the single source of truth for well data within XTO (500,000 entity records from 11 source systems).
+        \item Assisted data management team on API design to minimize long-term support for the application, which averaged 450 unique users each month
+      \end{itemize}
+%    \item[] Legacy Web Applications
+%      \begin{itemize}
+%        \setlength\itemsep{.1em}
+%        \item Developed and supported web based document management system that routed millions of documents to destination systems for \$700,000 annual savings
+%        \item Designed  web APIs to integrate and modernize a family of legacy applications
+%        \item Supported custom web application responsible for creating the official accounting record for new wells
+%      \end{itemize}
+  \end{itemize}
+
+%  {\sl ABB: Software Engineering Intern  \hfill June 2017 - Aug. 2017 }
+%  \begin{itemize}  %reduce space between items
+%    \setlength\itemsep{.1em}
+%    \item[--] Programmed embedded microcontrollers designed for upstream
+%      oil and gas automation
+%    \item[--] Updated desktop application to properly utilize new embedded functionality and
+%      communicate with embedded system
+%  \end{itemize}
+
+%  {\sl Phillips 66: Vulnerability Management Intern
+%  \hfill        May 2016 - Aug. 2016}
+%  \begin{itemize}
+%    \setlength\itemsep{.1em}
+%    \item[--] Monitored network traffic, hunted for potential threats and investigated vulnerabilities
+%    \item[--] Participated in incident response events as well as red team/blue team exercises
+%    \item[--] Completed forensic analysis of compromised or suspicious
+%      hard drives
+%  \end{itemize}
 %
-%                  {\sl Benefitfocus: Database Engineer Intern 
-%                    \hfill        June 2015 - Aug. 2015}
-%                  \begin{itemize}
-%                  \item[--] Learned T-SQL, database management, and business-specific
-%                    standards
-%                  \item[--] Updated SQL jobs for industry compatibility as well as reviewed
-%                    teammate's changes
-%                  \item[--] Investigated and corrected instances of mishandled sensitive data
-%                  \end{itemize}
 
-     \section{Skills \& Technologies}
-            \begin{itemize} 
-            \setlength\itemsep{.1em}
-            \item[--] {\sl Programming Languages:} C\#, TypeScript, T-SQL, JavaScript/HTML5/CSS3, Java, Python, C/C++, MIPS Assembly 
-            \item[--] {\sl Software \& Tools:} Git, Angular, Visual Studio, VS Code, .NET Framework, .NET Core,
-              SSMS, IIS 
-%              ModelSim, Quartus,
-%              FidelisXPS, Qradar and Forensic Tool Kit 
-            \item[--] {\sl Cloud:} Azure Pipelines, Azure App Services, Azure SQL,
-              Azure CLI, Azure AD (and OAuth 2.0), Graph API, CosmosDB, Azure Data Factory   
-            \end{itemize} 
+%  {\sl Benefitfocus: Database Engineer Intern
+%  \hfill        June 2015 - Aug. 2015}
+%  \begin{itemize}
+%    \item[--] Learned T-SQL, database management, and business-specific
+%      standards
+%    \item[--] Updated SQL jobs for industry compatibility as well as reviewed
+%      teammate's changes
+%    \item[--] Investigated and corrected instances of mishandled sensitive data
+%  \end{itemize}
+%  \section{Skills \& Technologies}
+%  \begin{itemize}
+%    \setlength\itemsep{.1em}
+%    \item[--] {\sl Programming Languages:} TypeScript, C\#, T-SQL, JavaScript/HTML5/CSS3, Java, Python, C/C++, MIPS Assembly
+%    \item[--] {\sl Software \& Tools:} Git, Node.js, React, Redux, Angular, Visual Studio, VS Code, .NET Framework, .NET Core,
+%      SSMS, IIS
+%      ModelSim, Quartus,
+%      FidelisXPS, Qradar and Forensic Tool Kit
+%    \item[--] {\sl AWS: Lambda, API Gateway, Kinesis Data Streams Kinesis Data Analytics, DynamoDB, AWS AppSync, OpenSearch, CloudFront, CloudWatch}
+%    \item[--] {\sl Azure:} Azure Pipelines, Azure App Services, Azure SQL,
+%      Azure CLI, Azure AD (and OAuth 2.0), Graph API, CosmosDB, Azure Data Factory
+%  \end{itemize}
+%
+  \section{Education} Oklahoma State University -- Stillwater, OK \hfill {\sl Aug. 2014 - May 2018}
+  \begin{itemize}
+    \setlength\itemsep{.1em}
+    \item[]{\sl Bachelor of Science,} Electrical Engineering \hfill {\sl GPA: 3.97}
+    \item[]{\sl Bachelor of Science,} Computer Engineering
+    \item[] Minor in Mathematics
+  \end{itemize}
 
-      \section{Education} Oklahoma State University -- Stillwater, OK \hfill {\sl Aug. 2014 - May 2018}
-          \begin{itemize}
-            \setlength\itemsep{.1em}
-            \item[]{\sl Bachelor of Science,} Electrical Engineering \hfill {\sl GPA: 3.97}
-            \item[]{\sl Bachelor of Science,} Computer Engineering 
-            \item[] Minor in Mathematics 
-          \end{itemize}
-                
-    \section{Other Work Experience}
+%  \section{Other Work Experience}
+%   {\sl Oklahoma State University: Teaching Assistant \hfill Aug. 2017 - May 2018}
+%  \begin{itemize}  %reduce space between items
+%    \item[--] Tutored students during office hours
+%    \item[--] Graded/proctored exams and quizzes
+%  \end{itemize}
+%
+%  {\sl QuikTrip: Store Clerk \hfill June 2015 - Aug. 2015}
+%  \begin{itemize}
+%    \item[--] Interacted with customers to provide an excellent in-store experience
+%    \item[--] Cleaned store, manage inventory and prepared food in the QT Kitchen
+%  \end{itemize}
+%
+%  \section{Projects}
+%   {\sl Elliptic Curve Cryptography}
+%  \begin{itemize}
+%    \item[] Wrote a python implementation of elliptic curve cryptography with only random, math, and sys
+%      as external dependencies. The library generates public/private key pairs, encodes/decodes strings
+%      onto the curves and encrypts/decrypts securely. Limitations are hardware-dependent (performs well
+%      with 1000 digit integers on laptop-class CPUs).
+%  \end{itemize}
 
-            {\sl Oklahoma State University: Teaching Assistant \hfill Aug. 2017 - May 2018}
-            \begin{itemize}  %reduce space between items
-            \item[--] Tutored students during office hours 
-            \item[--] Graded/proctored exams and quizzes
-            \end{itemize} 
-
-            {\sl QuikTrip: Store Clerk \hfill June 2015 - Aug. 2015}
-            \begin{itemize} 
-            \item[--] Interacted with customers to provide an excellent in-store experience 
-            \item[--] Cleaned store, manage inventory and prepared food in the QT Kitchen 
-            \end{itemize}
-
-     \section{Projects}
-             
-            {\sl Elliptic Curve Cryptography} 
-            \begin{itemize} 
-            \item[] Wrote a python implementation of elliptic curve cryptography with only random, math, and sys
-              as external dependencies. The library generates public/private key pairs, encodes/decodes strings
-              onto the curves and encrypts/decrypts securely. Limitations are hardware-dependent (performs well
-              with 1000 digit integers on laptop-class CPUs). 
-              \end{itemize}
-       
 \end{resume}
 \end{document}
-
-
-
-
-
-
-
