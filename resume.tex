@@ -1,0 +1,87 @@
+% LaTeX resume using res.cls
+\documentclass[line,overlapped]{res} 
+\usepackage[top=0.5in, bottom=0.5in, left=0.5in]{geometry}
+\usepackage{enumitem}
+
+\begin{document}
+\setlength\itemsep{.25em}
+\name{Kyle L. Linzy}
+% \address used twice to have two lines of address
+\address{Email: kllinzy1@gmail.com \hfill Mobile: (918) 440-3563}
+
+\begin{resume}
+  \section{Experience}
+  {\sl Amazon: Full-Stack Software Development Engineer \hfill April 2022 - Present} 
+    \begin{itemize}[leftmargin=*] 
+      \item[] Amazon Visualization Platform (AVP) 
+      \begin{itemize} 
+        \setlength\itemsep{.1em} 
+        \item Contributed to internal SCADA solution for real-time data visualization across Amazon FCs 
+        \item Optimized data transmission layer processing 200,000 records/s for near real-time use 
+        \item Built AppSync API backend for efficient live data distribution to user's browser 
+        \item Integrated with internal permissions system for self-service Site Layout management 
+        \item Used PixieJS to create interactive features allowing users to create and manipulate Site Layouts 
+      \end{itemize} \item[] Diesel 
+      \begin{itemize} 
+        \setlength\itemsep{.1em} 
+        \item Contributed to Golang-based service for reading and processing data from Programmable Logic Controllers (PLCs) 
+        \item Built validation service to guarantee modeling and expression validity 
+        \item Implemented features to catch and alert users of runtime errors, such as missing raw data 
+        \item Led development of UI for monitoring Diesel status and deploying Amazon Machine Data Interface (AMDI) models 
+      \end{itemize} 
+    \end{itemize}
+
+  {\sl ExxonMobil: Full-Stack Software Developer \hfill July 2018 - March 2022}
+  \begin{itemize}[leftmargin=*]
+    \item[] Reservoir Management Data Environment
+      \begin{itemize}
+        \setlength\itemsep{.1em}
+        \item Developed Angular front-end and .NET Framework API for efficient management of forecast data
+        \item Supported Power BI dataflows for user-created visualizations and reports
+        \item Built CI/CD pipeline in Azure DevOps for automated resource updates and rapid application deployment
+      \end{itemize}
+    \item[] NextPlan
+      \begin{itemize}
+        \setlength\itemsep{.1em}
+        \item Led development of system processing ~30 million data points from legacy Excel-based applications
+        \item Automated financial forecast workflows and data visualizations, enhancing cross-team communication
+        \item Implemented role-based access (Azure AD and OAuth 2.0) to secure proprietary data
+        \item Designed my organization's first production Azure application 
+      \end{itemize}
+    \item[] Master Data Integration
+      \begin{itemize}
+        \setlength\itemsep{.1em}
+        \item Built UI for API system managing 500,000 entity records from 11 source systems
+        \item Optimized API design for long-term supportability, serving 450 unique monthly users
+      \end{itemize}
+    \item[] Legacy Web Applications
+      \begin{itemize}
+        \setlength\itemsep{.1em}
+        \item Developed and supported web based document management system that routed millions of documents to destination systems for \$700,000 annual savings
+        \item Supported custom web application responsible for creating the official accounting record for new wells
+      \end{itemize}
+  \end{itemize}
+
+  \section{Skills \& Technologies}
+  \begin{itemize}
+    \setlength\itemsep{.1em}
+    \item[--] {\sl Programming Languages:} TypeScript, Go, C\#, Java 
+    %MIPS Assembly
+    \item[--] {\sl Software \& Tools:} Git, Node.js, React, Redux, Angular, .NET Framework, .NET Core,
+      SSMS, IIS
+      % ModelSim, Quartus,
+      % FidelisXPS, Qradar and Forensic Tool Kit
+    \item[--] {\sl AWS: Lambda, API Gateway, ECS, Kinesis, DynamoDB, AWS AppSync, OpenSearch, CloudFront}
+    \item[--] {\sl Azure:} Pipelines, App Services, Azure SQL,
+      Azure CLI, Azure AD, CosmosDB, Azure Data Factory
+  \end{itemize}
+
+  \section{Education}
+  Oklahoma State University - Stillwater, OK \hfill Aug. 2014 - May 2018
+  \begin{itemize}
+    \setlength\itemsep{.1em}
+    \item[]{\sl B.S. Electrical Engineering, B.S. Computer Engineering, Minor in Mathematics} \hfill GPA: 3.97
+  \end{itemize}
+
+\end{resume}
+\end{document}
