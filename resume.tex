@@ -12,23 +12,24 @@
 \begin{resume}
   \section{Experience}
   {\sl Amazon: Full-Stack Software Development Engineer \hfill April 2022 - Present} 
-    \begin{itemize}[leftmargin=*] 
-      \item[] Amazon Visualization Platform (AVP) 
-      \begin{itemize} 
-        \setlength\itemsep{.1em} 
-        \item Contributed to internal SCADA solution for real-time data visualization across Amazon FCs 
-        \item Optimized data transmission layer processing 200,000 records/s for near real-time use 
-        \item Built AppSync API backend for efficient live data distribution to user's browser 
-        \item Integrated with internal permissions system for self-service Site Layout management 
-        \item Used PixieJS to create interactive features allowing users to create and manipulate Site Layouts 
-      \end{itemize} \item[] Diesel 
-      \begin{itemize} 
-        \setlength\itemsep{.1em} 
-        \item Contributed to Golang-based service for reading and processing data from Programmable Logic Controllers (PLCs) 
-        \item Built validation service to guarantee modeling and expression validity 
-        \item Implemented features to catch and alert users of runtime errors, such as missing raw data 
-        \item Led development of UI for monitoring Diesel status and deploying Amazon Machine Data Interface (AMDI) models 
-      \end{itemize} 
+    \begin{itemize}[leftmargin=*]
+      \item[] Diesel
+      \begin{itemize}
+        \setlength\itemsep{.1em}
+        \item Contributed to Golang-based edge service reading and processing industrial data from Programmable Logic Controllers (PLCs), deployed across 500+ Amazon sites on three distinct edge compute platforms and totaling over 1 million data points collected every second
+        \item Built configuration management service for mapping data points and enabling self-service deployment of Amazon Machine Data Interface (AMDI) data models
+        \item Shifted error detection left, catching at build time configuration errors that previously surfaced at runtime, making it impossible to deploy invalid data models to the service
+        \item Designed the end-to-end data pipeline and owned deployment and DevOps for the service
+        \item Led development of UI for monitoring Diesel health and status
+      \end{itemize} \item[] Amazon Visualization Platform (AVP)
+      \begin{itemize}
+        \setlength\itemsep{.1em}
+        \item Contributed to internal SCADA solution for real-time data visualization across Amazon FCs
+        \item Optimized data transmission layer processing 200,000 records/s for near real-time use
+        \item Built AppSync API backend for efficient live data distribution to user's browser
+        \item Integrated with internal permissions system for self-service Site Layout management
+        \item Used PixieJS to create interactive features allowing users to create and manipulate Site Layouts
+      \end{itemize}
     \end{itemize}
 
   {\sl ExxonMobil: Full-Stack Software Developer \hfill July 2018 - March 2022}
